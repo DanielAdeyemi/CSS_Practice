@@ -1,24 +1,30 @@
-ol li {
+/* Descendant selector */
+ol li { 
   color: green;
 }
 
+/* Child selector */
 ol > li {
   color: purple
 }
 
+/* Tag selector */
 li {
   color: yellow;
 }
 
+/* Class selector */
 li.myClass {
   color: red;
 }
 
+/* General sibling selector */
 li.myClass ~ li {
   color: blue;
   font-weight: bold;
 }
 
+/* Adjacent sibling selector - selecting only ONE (NEXT) sibling */
 li.myClass + li {
   color: orange;
 }
