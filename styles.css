@@ -71,3 +71,18 @@ input[type=checkbox]:checked + label {
   color: purple;
   font-style: italic;
 }
+
+table {
+  border: 2px solid black
+}
+td {
+  width: 40px;
+  height: 40px;
+  /* border: 2px solid grey; */
+}
+
+tr:nth-of-type(even) td:nth-of-type(odd),
+tr:nth-of-type(odd) td:nth-of-type(even) {
+  background-color: black;
+}
+
