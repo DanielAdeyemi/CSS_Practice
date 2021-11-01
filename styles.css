@@ -28,3 +28,17 @@ li.myClass ~ li {
 li.myClass + li {
   color: orange;
 }
+
+/* Attribute selector */
+li[title] {
+  color: teal;
+  text-decoration:line-through
+}
+
+li[title*=a] {
+  border: 1px solid red;
+}
+
+a[href^=https] {
+  text-decoration: overline;
+}
