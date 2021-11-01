@@ -42,3 +42,32 @@ li[title*=a] {
 a[href^=https] {
   text-decoration: overline;
 }
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:required {
+  border-width: 3px;
+}
+
+input:optional {
+  border-width: 5px;
+}
+
+input:out-of-range {
+  background-color: pink;
+}
+
+input:in-range {
+  background-color: greenyellow;
+}
+
+input[type=checkbox]:checked + label {
+  color: purple;
+  font-style: italic;
+}
