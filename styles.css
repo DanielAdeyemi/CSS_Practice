@@ -1,0 +1,24 @@
+ol li {
+  color: green;
+}
+
+ol > li {
+  color: purple
+}
+
+li {
+  color: yellow;
+}
+
+li.myClass {
+  color: red;
+}
+
+li.myClass ~ li {
+  color: blue;
+  font-weight: bold;
+}
+
+li.myClass + li {
+  color: orange;
+}
