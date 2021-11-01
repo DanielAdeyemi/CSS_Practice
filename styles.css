@@ -72,17 +72,35 @@ input[type=checkbox]:checked + label {
   font-style: italic;
 }
 
-table {
+table:not(#sec) {
   border: 2px solid black
 }
+
 td {
   width: 40px;
   height: 40px;
-  /* border: 2px solid grey; */
 }
 
 tr:nth-of-type(even) td:nth-of-type(odd),
 tr:nth-of-type(odd) td:nth-of-type(even) {
   background-color: black;
+}
+
+/* Remove borders from the table */
+#sec {
+  border-spacing: 0;
+}
+
+#sec tr:nth-of-type(odd) td {
+  background-color: red;
+}
+
+#sec tr:nth-of-type(even) td { 
+  background-color: blue;
+}
+
+/* Add borders to specific row */
+#sec tr:nth-last-of-type(2) td{
+  outline: 1px solid white;
 }
 
