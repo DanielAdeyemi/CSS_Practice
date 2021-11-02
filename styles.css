@@ -104,3 +104,18 @@ tr:nth-of-type(odd) td:nth-of-type(even) {
   outline: 1px solid white;
 }
 
+.targs {
+  display: flex;
+  flex-direction: column;
+}
+
+a[href^=targ] {
+  width: fit-content;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+.targs:not(target) > a {
+  border-bottom: 0;
+  background-color: blue;
+}
