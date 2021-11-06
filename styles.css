@@ -121,4 +121,17 @@ a[href^=targ] {
 .targs:not(target) > a {
   border-bottom: 0;
   background-color: blue;
+  color: aliceblue;
+}
+
+li:first-of-type::first-letter {
+  position: relative;
+  float: left;
+  font-size: 2em;
+  line-height: 1;
+  color: #990000;
+  font-weight: bold;
+  padding: 0 4px 2px 0;
+  top: 8px;
+  margin: 2px 2px 5px;
 }
