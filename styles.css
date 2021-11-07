@@ -42,6 +42,34 @@ li[title*=a] {
   border: 1px solid red;
 }
 
+/* Creating thought circles */
+ul>li:last-of-type,
+ul>li:last-of-type::before,
+ul>li:last-of-type::after {
+  border-radius: 50%;
+  border: 3px solid blue;
+  background-color: rgba(255, 255, 255, 0.742);
+  position: relative;
+  width: 5%;
+}
+
+ul>li:last-of-type::before,
+ul>li:last-of-type::after {
+  content: '';
+  position: absolute;
+  left: 55%;
+  bottom: -25px;
+  height: 25px;
+  width: 25px;
+}
+
+ul>li:last-of-type::after {
+  left: 91%;
+  bottom: -45px;
+  height: 15px;
+  width: 15px;
+}
+
 a[href^=https] {
   text-decoration: overline;
 }
@@ -75,6 +103,7 @@ input[type=checkbox]:checked + label {
   font-style: italic;
 }
 
+/* Create triangle */
 .chessboard::before {
   content: '';
   width: 0;
