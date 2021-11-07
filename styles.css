@@ -75,8 +75,23 @@ input[type=checkbox]:checked + label {
   font-style: italic;
 }
 
+.chessboard::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 20px solid transparent;
+  border-left-color: green;
+  border-width: 60px 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 42%;
+}
+
 .chessboard {
   display: flex;
+  flex-direction: row;
 }
 
 table:not(#sec) {
