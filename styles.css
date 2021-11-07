@@ -75,8 +75,13 @@ input[type=checkbox]:checked + label {
   font-style: italic;
 }
 
+.chessboard {
+  display: flex;
+}
+
 table:not(#sec) {
-  border: 2px solid black
+  border: 2px solid black;
+  margin: auto;
 }
 
 td {
