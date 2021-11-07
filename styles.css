@@ -116,6 +116,8 @@ input[type=checkbox]:checked + label {
     width: 12em;
     border-radius: 20px;
     padding: 5px 10px;
+    color: black;
+    font-style: normal;
   }
   
   label[for=box]:hover::after {
